@@ -18,8 +18,8 @@ This repository contains a web application that visualizes and calculates the vo
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/stl-volume-surface-calculator.git
-    cd stl-volume-surface-calculator
+    git clone https://github.com/kandarpgautam/ThreeJSVolumeDemo.git
+    cd ThreeJSVolumeDemo
     ```
 
 2. Install the required packages:
