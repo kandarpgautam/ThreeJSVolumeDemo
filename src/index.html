@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>STL Loader</title>
+    <link rel="icon" type="image/x-icon" href="./vite.svg" />
+    <style>
+      body {
+        overflow: hidden;
+        margin: 0px;
+      }
+
+      #progressBar {
+        width: 400px;
+        height: 24px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -250px;
+      }
+      #modelInfo{
+        position: absolute;
+        z-index: 100;
+        display: block;
+        color:white;
+        bottom:0%;
+        right:0%;
+        background-color: #1c357a;
+        width:300px;
+        opacity: .8;
+
+      }
+
+      #modelInfoTitle{
+        user-select: none;
+        padding: 5px;
+      }
+
+      #modelInfoTitle:hover{
+        cursor: pointer;
+      }
+
+      #modelInfoTitle::before{
+        content: "▾";
+        display: inline-block;
+        font-family: lil-gui;
+      }
+
+      #modelInfoTitle.collapsed::before{
+        content:"▸" ;
+        display: inline-block;
+        font-family: lil-gui;
+      }
+
+      #info {
+        background-color: #1F1F1F;
+        font-size: small;
+        transition: ease;
+      }
+      #info > table{
+        width: 100%;
+      }
+
+      #info.closed{
+        display: none;
+        
+      }
+    </style>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "/build/three.module.js"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <progress value="0" max="100" id="progressBar"></progress>
+    <div id="modelInfo">
+        <div id="modelInfoTitle">Details</div>
+        <div id="info"></div>
+    </div>
+
+    <script type="module" src="./loadSTL.js"></script>
+  </body>
+</html>
