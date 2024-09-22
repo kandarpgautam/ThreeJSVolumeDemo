@@ -41,10 +41,10 @@ This repository contains a web application that visualizes and calculates the vo
     http://localhost:3000/?filePath=path/to/your/file.stl
     ```
 
-Examples: 
-[Moneda](http://localhost/index.html?filePath=STL/Moneda.stl)
-[Skull](http://localhost/index.html?filePath=STL/Skull.stl)
-[Base with key](http://localhost/index.html?filePath=STL/Base%20with%20key.stl)
+Live Examples: 
+1. [Moneda](https://kandarpgautam.github.io/ThreeJSVolumeDemo/?filePath=STL/Moneda.stl)
+2. [Skull](https://kandarpgautam.github.io/ThreeJSVolumeDemo/?filePath=STL/Skull.stl)
+3. [Base with key](https://kandarpgautam.github.io/ThreeJSVolumeDemo/?filePath=STL/Base%20with%20key.stl)
 
 
 ## Controls
